@@ -1,0 +1,65 @@
+@font-face {
+	font-family: "Lato-Black";
+	src: url(./Lato/Lato-Black.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Lato-Light";
+	src: url(./Lato/Lato-Light.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Lato-Regular";
+	src: url(./Lato/Lato-Regular.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Lato-Thin";
+	src: url(./Lato/Lato-Thin.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-Black";
+	src: url(./Poppins/Poppins-Black.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-Bold";
+	src: url(./Poppins/Poppins-Bold.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-ExtraBold";
+	src: url(./Poppins/Poppins-ExtraBold.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-ExtraLight";
+	src: url(./Poppins/Poppins-ExtraLight.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-Light";
+	src: url(./Poppins/Poppins-Light.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-Medium";
+	src: url(./Poppins/Poppins-Medium.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-Regular";
+	src: url(./Poppins/Poppins-Regular.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-SemiBold";
+	src: url(./Poppins/Poppins-SemiBold.woff2) format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-Thin";
+	src: url(./Poppins/Poppins-Thin.woff2) format("woff2");
+	font-display: swap;
+}
