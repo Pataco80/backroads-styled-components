@@ -50,8 +50,7 @@ export const typeScale = {
   line3Xl: `clamp(3.359rem, 3.28vw + 2.703rem, 5.245rem)`,
 }
 
-{
-  /*export const globalTypography = css`
+const globalTypography = css`
   h1,
   .h1,
   h2,
@@ -109,5 +108,5 @@ export const typeScale = {
     font-size: ${typeScale.stepXs};
     line-height: ${typeScale.lineXs};
   }
-	`*/
-}
+`
+export { globalTypography }

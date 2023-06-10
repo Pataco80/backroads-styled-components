@@ -5,10 +5,10 @@ import { reset } from "styled-reset"
 
 import "../fonts/fonts.css"
 import { spaceScale } from "./utilsStyled"
-import { typeScale } from "./typography"
+import { typeScale, globalTypography } from "./typography"
 export const GlobalStyle = createGlobalStyle`
   ${reset};
-
+${globalTypography};
   *,*::before,*::after {
     box-sizing: border-box;
   }
