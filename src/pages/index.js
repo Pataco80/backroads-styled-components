@@ -68,7 +68,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <div style={{ textAlign: "center" }}>
+    <div className="spaceXl" style={{ textAlign: "center" }}>
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>

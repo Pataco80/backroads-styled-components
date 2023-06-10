@@ -4,6 +4,7 @@ import { reset } from "styled-reset"
 //import { generateMedia } from "styled-media-query"
 
 import "../fonts/fonts.css"
+import { spaceScale } from "./utilsStyled"
 export const GlobalStyle = createGlobalStyle`
   ${reset};
 
@@ -21,5 +22,9 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     color:black;
     background-color: silver;
+  }
+
+  .spaceXl {
+    padding: ${spaceScale.spaceXl};
   }
 `
