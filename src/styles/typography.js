@@ -76,7 +76,7 @@ const globalTypography = css`
   }
   h2,
   .h2 {
-    font-size: ${typeScale.step2XL};
+    font-size: ${typeScale.step2Xl};
     line-height: ${typeScale.line2Xl};
   }
   h3,
