@@ -3,12 +3,14 @@ import { createGlobalStyle } from "styled-components"
 import { reset } from "styled-reset"
 //import { generateMedia } from "styled-media-query"
 
+import { fontFamilly, typeScale } from "./typography"
+import { globalTypography } from "./typography"
+import { setColor } from "./colors"
 import "../fonts/fonts.css"
-import { spaceScale } from "./utilsStyled"
-import { typeScale, globalTypography } from "./typography"
 export const GlobalStyle = createGlobalStyle`
   ${reset};
-${globalTypography};
+  ${globalTypography};
+
   *,*::before,*::after {
     box-sizing: border-box;
   }
@@ -16,17 +18,37 @@ ${globalTypography};
   html,body {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: ${fontFamilly.bodyFont};
+		font-size: ${typeScale.stepS};
+		line-height: ${typeScale.lineS};
+    color: ${setColor.mainBlack};
   }
   
-  body{
-    width: 100%;
-    font-size: ${typeScale.stepXs};
-    line-height: ${spaceScale.spaceXs};
-    color:black;
-    background-color: silver;
-  }
 
-  .spaceXl {
-    padding: ${spaceScale.spaceXl};
+
+
+  .red{
+    background-color:red;
+    padding:3rem;
+
   }
+  section div {
+    margin-bottom: 2rem;
+  }
+  .mainBlue {
+    background-color:${setColor.mainBlue};
+  }
+  .mainWhite {
+    background-color:${setColor.mainWhite};
+  }
+  .darkWhite {
+    background-color:${setColor.darkWhite};
+  }
+  .mainGrey {
+    background-color:${setColor.mainGrey};
+  }
+  .darkGrey {
+    background-color:${setColor.darkGrey};
+  }
+  
 `
