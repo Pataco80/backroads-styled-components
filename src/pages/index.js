@@ -1,46 +1,84 @@
-import * as React from "react"
+import React from "react"
 
+// Components
 import Layout from "../components/Layout/Layout"
+// Query
 
-const IndexPage = () => (
-  <Layout>
-    <div className="spaceXl" style={{ textAlign: "center" }}>
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <h2>
-        Welcome to <b>Gatsby!</b>
-      </h2>
-      <h3>
-        Welcome to <b>Gatsby!</b>
-      </h3>
-      <h4>
-        Welcome to <b>Gatsby!</b>
-      </h4>
-      <h5>
-        Welcome to <b>Gatsby!</b>
-      </h5>
-      <h6>
-        Welcome to <b>Gatsby!</b>
-      </h6>
-      <p>
-        <b>Example pages:</b> <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
-      <small>
-        <b>Example pages:</b> <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </small>
-    </div>
-    <div className="spaceXl">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nihil
-        dolores ea voluptatum. Expedita officia sit molestias mollitia
-        voluptates harum minima, optio cupiditate quisquam voluptatibus dolores
-        perspiciatis aliquam, autem ullam.
-      </p>
-    </div>
-  </Layout>
-)
+// The Component
+const IndexPage = () => {
+	return (
+		<Layout>
+			<h1>Index page</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sed
+				commodi nisi nemo, in dolor accusantium officiis esse, autem officia
+				voluptatibus assumenda aperiam distinctio quia, quod sapiente quasi
+				quibusdam suscipit.
+			</p>
+			<section className='red'>
+				<div className='mainBlue'>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+						provident aut similique consequuntur dolore! Eius, omnis
+						exercitationem eaque, error nihil in alias impedit esse ullam
+						doloribus sapiente? Eligendi, commodi dolore?Lorem ipsum dolor sit
+						amet consectetur adipisicing elit. Dignissimos possimus esse
+						suscipiclasst optio temporibus quisquam! Voluptas voluptate deleniti
+						iure, repellendus voluptatem at, nemo neque excepturi veniam esse
+						laboriosam tempora. Autem?
+					</p>
+				</div>
+				<div className='mainWhite'>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+						provident aut similique consequuntur dolore! Eius, omnis
+						exercitationem eaque, error nihil in alias impedit esse ullam
+						doloribus sapiente? Eligendi, commodi dolore?Lorem ipsum dolor sit
+						amet consectetur adipisicing elit. Dignissimos possimus esse
+						suscipiclasst optio temporibus quisquam! Voluptas voluptate deleniti
+						iure, repellendus voluptatem at, nemo neque excepturi veniam esse
+						laboriosam tempora. Autem?
+					</p>
+				</div>
+				<div className='darkWhite'>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+						provident aut similique consequuntur dolore! Eius, omnis
+						exercitationem eaque, error nihil in alias impedit esse ullam
+						doloribus sapiente? Eligendi, commodi dolore?Lorem ipsum dolor sit
+						amet consectetur adipisicing elit. Dignissimos possimus esse
+						suscipit optio temporibus quisquam! Voluptas voluptate deleniti
+						iure, repellendus voluptatem at, nemo neque excepturi veniam esse
+						laboriosam tempora. Autem?
+					</p>
+				</div>
+				<div className='mainGrey'>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+						provident aut similique consequuntur dolore! Eius, omnis
+						exercitationem eaque, error nihil in alias impedit esse ullam
+						doloribus sapiente? Eligendi, commodi dolore?Lorem ipsum dolor sit
+						amet consectetur adipisicing elit. Dignissimos possimus esse
+						suscipiclasst optio temporibus quisquam! Voluptas voluptate deleniti
+						iure, repellendus voluptatem at, nemo neque excepturi veniam esse
+						laboriosam tempora. Autem?
+					</p>
+				</div>
+				<div className='darkGrey'>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+						provident aut similique consequuntur dolore! Eius, omnis
+						exercitationem eaque, error nihil in alias impedit esse ullam
+						doloribus sapiente? Eligendi, commodi dolore?Lorem ipsum dolor sit
+						amet consectetur adipisicing elit. Dignissimos possimus esse
+						suscipit optio temporibus quisquam! Voluptas voluptate deleniti
+						iure, repellendus voluptatem at, nemo neque excepturi veniam esse
+						laboriosam tempora. Autem?
+					</p>
+				</div>
+			</section>
+		</Layout>
+	)
+}
 
 export default IndexPage

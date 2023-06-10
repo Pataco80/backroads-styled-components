@@ -1,4 +1,5 @@
 import { css } from "styled-components"
+import { setColor } from "./colors"
 import { setLetterSpacing } from "./utilsStyled"
 
 export const fontFamilly = {
@@ -63,7 +64,7 @@ const globalTypography = css`
   .h5,
   h6,
   .h6 {
-    color: red;
+    color: ${setColor.mainBlue};
     font-family: ${fontFamilly.titleFont};
     ${setLetterSpacing()};
   }
