@@ -5,6 +5,7 @@ import { reset } from "styled-reset"
 
 import "../fonts/fonts.css"
 import { spaceScale } from "./utilsStyled"
+import { typeScale } from "./typography"
 export const GlobalStyle = createGlobalStyle`
   ${reset};
 
@@ -19,7 +20,8 @@ export const GlobalStyle = createGlobalStyle`
   
   body{
     width: 100%;
-    font-size: 1rem;
+    font-size: ${typeScale.stepXs};
+    line-height: ${spaceScale.spaceXs};
     color:black;
     background-color: silver;
   }
