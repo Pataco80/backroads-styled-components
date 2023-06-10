@@ -8,10 +8,29 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>
+      <h2>
+        Welcome to <b>Gatsby!</b>
+      </h2>
+      <h3>
+        Welcome to <b>Gatsby!</b>
+      </h3>
+      <h4>
+        Welcome to <b>Gatsby!</b>
+      </h4>
+      <h5>
+        Welcome to <b>Gatsby!</b>
+      </h5>
+      <h6>
+        Welcome to <b>Gatsby!</b>
+      </h6>
       <p>
         <b>Example pages:</b> <br />
         Edit <code>src/pages/index.js</code> to update this page.
       </p>
+      <small>
+        <b>Example pages:</b> <br />
+        Edit <code>src/pages/index.js</code> to update this page.
+      </small>
     </div>
     <div className="spaceXl">
       <p>
