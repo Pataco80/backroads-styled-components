@@ -23,31 +23,31 @@ export const typeScale = {
   line2xs: `clamp(0.938rem, 0.283vw + 0.881rem, 1.1rem)`,
 
   /* Step -1: 15.00px → 17.60px */
-  stepXs: `clamp(0.94rem, calc(0.88rem + 0.28vw), 1.10rem)`,
+  stepXs: `clamp(0.94rem, calc(0.88rem + 0.28vw), 1.1rem)`,
   lineXs: `clamp(1.125rem, 0.435vw + 1.038rem, 1.375rem)`,
 
   /* Step 0: 18.00px → 22.00px */
-  stepS: `clamp(1.13rem, calc(1.02rem + 0.46vw), 1.38rem)`,
+  stepS: `clamp(1.13rem, calc(1.04rem + 0.43vw), 1.38rem)`,
   lineS: `clamp(1.35rem, 0.641vw + 1.222rem, 1.719rem)`,
 
   /* Step 1: 21.60px → 27.50px */
-  stepM: `clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);`,
+  stepM: `clamp(1.35rem, calc(1.22rem + 0.64vw), 1.72rem)`,
   lineM: `clamp(1.62rem, 0.579vw + 1.504rem, 1.953rem)`,
 
   /* Step 2: 25.92px → 34.38px */
-  stepL: `clamp(1.62rem, calc(1.5rem + 0.58vw), 1.95rem);`,
+  stepL: `clamp(1.62rem, calc(1.44rem + 0.92vw), 2.15rem)`,
   lineL: `clamp(1.944rem, 0.865vw + 1.771rem, 2.441rem)`,
 
   /* Step 3: 31.10px → 42.97px */
-  stepXl: `clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);`,
+  stepXl: `clamp(1.94rem, calc(1.69rem + 1.29vw), 2.69rem)`,
   lineXl: `clamp(2.333rem, 1.251vw + 2.082rem, 3.052rem)`,
 
   /* Step 4: 37.32px → 53.71px */
-  step2Xl: `clamp(2.33rem, calc(2.08rem + 1.26vw), 3.05rem);`,
+  step2Xl: `clamp(2.33rem, calc(1.98rem + 1.78vw), 3.36rem)`,
   line2Xl: `clamp(2.799rem, 1.767vw + 2.446rem, 3.815rem)`,
 
   /* Step 5: 44.79px → 67.14px */
-  step3Xl: `clamp(2.80rem, calc(2.31rem + 2.43vw), 4.20rem)`,
+  step3Xl: `clamp(2.8rem, calc(2.31rem + 2.43vw), 4.2rem)`,
   line3Xl: `clamp(3.359rem, 3.28vw + 2.703rem, 5.245rem)`,
 }
 
@@ -69,29 +69,53 @@ const globalTypography = css`
     ${setLetterSpacing()};
   }
 
+  :root {
+    /* font-size fluid */
+    --step--2: clamp(0.78rem, calc(0.75rem + 0.17vw), 0.88rem);
+    --step--1: clamp(0.94rem, calc(0.88rem + 0.28vw), 1.1rem);
+    --line--1: clamp(1.125rem, 0.435vw + 1.038rem, 1.375rem);
+    --step-0: clamp(1.13rem, calc(1.04rem + 0.43vw), 1.38rem);
+    --line-0: clamp(1.35rem, 0.641vw + 1.222rem, 1.719rem);
+    --step-1: clamp(1.35rem, calc(1.22rem + 0.64vw), 1.72rem);
+    --step-2: clamp(1.62rem, calc(1.44rem + 0.92vw), 2.15rem);
+    --step-3: clamp(1.94rem, calc(1.69rem + 1.29vw), 2.69rem);
+    --step-4: clamp(2.33rem, calc(1.98rem + 1.78vw), 3.36rem);
+    --step-5: clamp(2.8rem, calc(2.31rem + 2.43vw), 4.2rem);
+
+    /* line-height fluid */
+    --line--2: clamp(0.938rem, 0.283vw + 0.881rem, 1.1rem);
+  }
+
   h1,
   .h1 {
     font-size: ${typeScale.step3Xl};
+    font-size: var(--step-5);
     line-height: ${typeScale.line3Xl};
   }
   h2,
   .h2 {
     font-size: ${typeScale.step2Xl};
+    font-size: var(--step-4);
     line-height: ${typeScale.line2Xl};
   }
   h3,
   .h3 {
     font-size: ${typeScale.stepXl};
+    font-size: var(--step-3);
     line-height: ${typeScale.lineXl};
   }
   h4,
   .h4 {
     font-size: ${typeScale.stepL};
+    font-size: var(--step-2);
+
     line-height: ${typeScale.lineL};
   }
   h5,
   .h5 {
     font-size: ${typeScale.stepM};
+    font-size: var(--step-1);
+
     line-height: ${typeScale.lineM};
   }
   h6,

@@ -6,11 +6,11 @@
  */
 
 import * as React from "react"
-import { GlobalStyle } from "../../styles/globalStyles"
+import GlobalStyles from "../../styles/globalStyles"
 const Layout = ({ children }) => {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyles />
       <main>{children}</main>
     </>
   )
