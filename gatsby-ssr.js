@@ -1,3 +1,5 @@
+const React = require("react")
+const Layout = require("./src/components/Layout/Layout").default
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
@@ -9,4 +11,10 @@
  */
 exports.onRenderBody = ({ setHtmlAttributes }) => {
   setHtmlAttributes({ lang: `en` })
+}
+
+exports.wrapPageElement = ({ element, props }) => {
+  // props provide same data to Layout as Page element will get
+  // including location, data, etc - you don't need to pass it
+  return <Layout {...props}>{element}</Layout>
 }
