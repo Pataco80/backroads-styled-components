@@ -17,7 +17,7 @@ const Header = () => {
       <img className="logo" src={logo} alt="Backroads Logo" />
       <Navbar />
       <S.ToggleBtn onClick={handleOpenMenu}>
-        <MenuOpen size={48} />
+        <MenuOpen size={32} />
       </S.ToggleBtn>
     </S.HeaderWrapper>
   )
