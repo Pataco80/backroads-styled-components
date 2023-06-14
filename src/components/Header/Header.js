@@ -1,17 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import logo from "../../images/logo.svg"
 import { MenuOpen } from "@styled-icons/material/MenuOpen"
 import Navbar from "../Navbar/Navbar"
 
+import * as S from "./HeaderStyled"
+
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false)
+
+  const handleOpenMenu = () => {
+    setOpenMenu(openMenu => !openMenu)
+  }
+  console.log(openMenu)
   return (
-    <header>
-      <img src={logo} alt="Backroads Logo" />
+    <S.HeaderWrapper>
+      <img className="logo" src={logo} alt="Backroads Logo" />
       <Navbar />
-      <button>
-        <MenuOpen />
-      </button>
-    </header>
+      <S.ToggleBtn onClick={handleOpenMenu}>
+        <MenuOpen size={48} />
+      </S.ToggleBtn>
+    </S.HeaderWrapper>
   )
 }
 

@@ -65,7 +65,7 @@ export const setGrid = ({
 }
 
 export const spaceScale = {
-  /* @link https://utopia.fyi/space/calculator?c=375,18,1.2,1240,22,1.25,5,2,&s=0.75|0.5|0.25|0.2,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,22,1.25,5,2,&s=0.75|0.5|0.25|0.2,1.5|2|3|4|6,4xs-s|s-l|s-2xl|m-2xl&g=s,l,xl,12 */
 
   /* Space 4xs: 4px → 4px */
   space4xs: `clamp(0.25rem, calc(0.25rem + 0.00vw), 0.25rem)`,
@@ -126,6 +126,8 @@ export const spaceScale = {
   space2xlUp3xl: `clamp(4.50rem, calc(3.20rem + 6.52vw), 8.25rem)`,
 
   /* Custom pairs */
+  /* Space 4xs-s: 4px → 22px */
+  space4xsUpS: `clamp(0.25rem, calc(-0.14rem + 1.96vw), 1.38rem)`,
   /* Space s-l: 18px → 44px */
   spaceSupL: `clamp(1.13rem, calc(0.56rem + 2.83vw), 2.75rem)`,
 

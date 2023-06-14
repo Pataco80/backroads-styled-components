@@ -8,13 +8,14 @@
 import * as React from "react"
 import GlobalStyles from "../../styles/globalStyles"
 import Header from "../Header/Header"
+import * as S from "./LayoutStyled.js"
 const Layout = ({ children }) => {
   return (
-    <>
+    <S.LayoutWrapper>
       <GlobalStyles />
       <Header />
       <main>{children}</main>
-    </>
+    </S.LayoutWrapper>
   )
 }
 

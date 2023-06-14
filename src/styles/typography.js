@@ -1,6 +1,6 @@
 import { css } from "styled-components"
 import { setColor } from "./colors"
-import { setLetterSpacing, spaceScale } from "./utilsStyled"
+import { setLetterSpacing, setTransition, spaceScale } from "./utilsStyled"
 
 export const fontFamilly = {
   titleFont: "Poppins-Regular",
@@ -17,7 +17,7 @@ export const fontFamilly = {
 }
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,22,1.25,5,2,&s=0.75|0.5|0.25|0.2,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-const typeScale = {
+export const typeScale = {
   /* Step -2: 12.50px → 14.08px */
   step2xs: `clamp(0.78rem, calc(0.75rem + 0.17vw), 0.88rem)`,
   line2xs: `clamp(0.938rem, calc(0.881rem + 0.283vw), 1.1rem)`,
@@ -130,6 +130,21 @@ const globalTypography = css`
     font-size: ${typeScale.stepXs};
     line-height: ${typeScale.lineXs};
     margin-bottom: ${spaceScale.spaceS};
+  }
+
+  a {
+    font-size: ${typeScale.stepS};
+    line-height: ${typeScale.lineS};
+    color: ${setColor.mainBlue};
+    ${setTransition()};
+
+    &:hover,
+    &:active {
+      color: ${setColor.darkBlue};
+    }
+    &:visited {
+      color: ${setColor.darkerBlue};
+    }
   }
 `
 export { globalTypography }

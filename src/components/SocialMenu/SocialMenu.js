@@ -1,22 +1,21 @@
 import React from "react"
 import socialLinks from "../constants/socialMenu/socialLinks"
 import Icons from "../constants/socialMenu/socialIcons"
-
+import * as S from "./SocialMenuStyled"
 const SocialMenu = () => {
   return (
-    <ul>
+    <S.MenuWrapper>
       {socialLinks.map((link, i) => {
         const Icon = Icons[link.name]
         return (
-          <li key={i}>
+          <S.MenuItem key={i}>
             <a href="">
-              <Icon size="32" />
-              {link.name}
+              <Icon size={32} title={link.name} />
             </a>
-          </li>
+          </S.MenuItem>
         )
       })}
-    </ul>
+    </S.MenuWrapper>
   )
 }
 

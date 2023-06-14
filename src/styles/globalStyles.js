@@ -14,20 +14,20 @@ ${globalTypography}
   *, *:before, *:after {
     box-sizing: border-box;
   }
+  html{
+    overflow-wrap: normal;
+  }
 
   body {
     font-family: ${fontFamilly.bodyFont || fontFamilly.defaultFonts};
     font-size: 100%;
     line-height: 1.5;
+    width:100vw;
   }
 
   .gatsby-image-wrapper {
     width: 100%;
   }
-header {
-  ${setFlex({ flDir: "column" })};
-  padding: ${spaceScale.spaceM};
-}
 
   .red {
     background-color: red;
