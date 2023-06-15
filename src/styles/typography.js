@@ -3,7 +3,7 @@ import { setColor } from "./colors"
 import { setLetterSpacing, setTransition, spaceScale } from "./utilsStyled"
 
 export const fontFamilly = {
-  titleFont: "Poppins-Regular",
+  titleFont: "Poppins-Medium",
   bodyFont: "Lato-Regular",
   defaultFonts: `"system",
   "-apple-system",
@@ -73,7 +73,7 @@ const globalTypography = css`
   .h1,
   h2,
   .h2 {
-    margin-bottom: ${spaceScale.space2xl};
+    margin-bottom: ${spaceScale.spaceXl};
   }
 
   h3,

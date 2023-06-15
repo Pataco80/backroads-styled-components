@@ -20,6 +20,7 @@ ${globalTypography}
 
   body {
     font-family: ${fontFamilly.bodyFont || fontFamilly.defaultFonts};
+    color:${setColor.mainBlack};
     font-size: 100%;
     line-height: 1.5;
     width:100vw;
