@@ -3,11 +3,12 @@ import { setColor } from "../../styles/colors"
 import { spaceScale, media } from "../../styles/utilsStyled"
 
 export const HeaderWrapper = styled.header`
-  background-color: white;
+  background-color: ${setColor.mainWhite};
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
+  z-index: 100;
 
   padding: ${spaceScale.space4xsUpS};
   display: grid;

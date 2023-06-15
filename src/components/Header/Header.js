@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import logo from "../../images/logo.svg"
 import { MenuOpen } from "@styled-icons/material/MenuOpen"
 import Navbar from "../Navbar/Navbar"
@@ -14,7 +15,9 @@ const Header = () => {
   console.log(openMenu)
   return (
     <S.HeaderWrapper>
-      <img className="logo" src={logo} alt="Backroads Logo" />
+      <Link to="/">
+        <img className="logo" src={logo} alt="Backroads Logo" />
+      </Link>
       <Navbar />
       <S.ToggleBtn onClick={handleOpenMenu}>
         <MenuOpen size={32} />
