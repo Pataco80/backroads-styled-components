@@ -1,24 +1,45 @@
 import React from "react"
+import { getImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 
 // Components
-import Layout from "../components/Layout/Layout"
-// Query
+import Hero from "../components/Hero/Hero"
+// GraphQl Queries
+export const query = graphql`
+  {
+    heroBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, formats: WEBP, placeholder: BLURRED)
+      }
+      name
+    }
+  }
+`
 
 // The Component
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const bcgImage = getImage(data.heroBcg)
+  const altImg = data.heroBcg.name
+
   return (
-    <Layout>
-      <header>
-        <h1>Index page</h1>
-        <h2>Index page</h2>
-        <h3>Index page</h3>
-        <h4>Index page</h4>
-        <h5>Index page</h5>
-        <h6>Index page</h6>
-        <small>Index page</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </header>
+    <>
+      <Hero home title="Welcome" imgPath={bcgImage} altBcgImage={altImg} />
       <section className="red">
+        <div className="space4xs">
+          <p>Space 4xs: 4px → 4px</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+            provident aut similique consequuntur dolore! Eius, omnis
+            exercitationem eaque, error nihil in alias impedit esse ullam
+            doloribus sapiente?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+            provident aut similique consequuntur dolore! Eius, omnis
+            exercitationem eaque, error nihil in alias impedit esse ullam
+            doloribus sapiente?
+          </p>
+        </div>
         <p className="space4xs">
           Space 4xs: 4px → 4px
           <br />
@@ -106,7 +127,7 @@ const IndexPage = () => {
           error nihil in alias impedit esse ullam doloribus sapiente?
         </p>
       </section>
-    </Layout>
+    </>
   )
 }
 
