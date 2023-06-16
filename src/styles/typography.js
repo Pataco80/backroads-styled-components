@@ -67,6 +67,7 @@ const globalTypography = css`
     color: ${setColor.mainBlue};
     font-family: ${fontFamilly.titleFont || fontFamilly.defaultFonts};
     ${setLetterSpacing()};
+    text-transform: uppercase;
   }
 
   h1,

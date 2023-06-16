@@ -86,9 +86,9 @@ const ButtonStyles = css`
     ${({ blue, white, blueOutline }) =>
       (blue || white || blueOutline) &&
       `
-      color: ${setColor.mainWhite};
-      border: ${setBorder({ color: `${setColor.darkBlue}` })};
-      background: ${setColor.darkBlue};
+      color: ${setColor.mainBlue};
+      border: ${setBorder({ color: `${setColor.mainblue}` })};
+      background: ${setColor.mainWhite};
     `}
 
     ${({ whiteOutline }) =>

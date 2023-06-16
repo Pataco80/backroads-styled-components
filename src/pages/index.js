@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 
 // Components
 import Hero from "../components/Hero/Hero"
+import About from "../components/About/About"
 // GraphQl Queries
 export const query = graphql`
   {
@@ -24,6 +25,7 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <Hero home title="Welcome" imgPath={bcgImage} altBcgImage={altImg} />
+      <About />
       <section className="red">
         <div className="space4xs">
           <p>Space 4xs: 4px → 4px</p>

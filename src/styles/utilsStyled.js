@@ -224,7 +224,7 @@ export const setShadow = (
   } = {}
 ) => {
   if (style === "light") {
-    return `${inset} 0 2px 8px ${rgba(setColor.mainBlack, 30)};`
+    return `${inset} 2px 5px 3px 0px ${rgba(setColor.mainBlack, 50)};`
   }
   if (style === "medium") {
     return `${inset} 0 3px 12px ${rgba(setColor.mainBlack, 50)};`
